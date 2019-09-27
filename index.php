@@ -1,8 +1,8 @@
 <?php
 // HTTPヘッダを設定
 
-if(!($_GET['name'] == null)){
-    $message = $_GET['name'];
+if(isset($_GET["name"])){
+    $message = $_GET["name"];
     $channelToken = '352jijyCONf7qp9N9sSHCWHTDnki/dnjKYlKNzVW93myBTzloeHbfD0vwJLsS3KmRUHWUjqMcklIQ1e6dtD9PBTdxkNdcSFq64bxiUD54iWHx8y8qxciySFJDxka4GP9HqBxEATWkQBm9Yw2Zwd74wdB04t89/1O/w1cDnyilFU=';
     $headers = [
         'Authorization: Bearer ' . $channelToken,
